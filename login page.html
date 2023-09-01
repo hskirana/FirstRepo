@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Login Page</title>
+<style>
+div {
+  background-color: lightgreen;
+  width: 200px;
+  hight: 100px;
+  border: 2px solid black;
+  padding: 60px;
+  margin: 150px;
+}
+
+</style>
+
+</head>
+<body bgcolor="lightblue">
+<center>
+
+<div><br><img src="download1.jpg"</img>
+    <u><h2>Login</h2></u>
+    <form name="f1" id="form1">
+<pre>
+       <br><b>username : <input type="text" id="username" name="t1" placeholder="enter tha name" required>
+ 
+        <br><b>password : <input type="password" id="password" name="t2" placeholder="enter tha password" required><br></pre>
+        <input type="submit" value="Login"></div>
+    </form>
+</center>
+<script>
+    document.getElementById("form1").addEventListener("submit", validateForm);
+
+    function validateForm(event) {
+        event.preventDefault();
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "drr" && password === "gpt") {
+            alert("Login successful!");}
+        else if (username === "css" && password === "drr") {
+            alert("Login successful!");
+        } else {
+            alert("Invalid username or password.");
+        }
+    }
+</script>
+</body>
+</html>
